@@ -1,14 +1,14 @@
 {
 	"builds": [
 	  {
-		"src": "/pg_app/main.py",
+		"src": "pg_app/main.py",
 		"use": "@vercel/python"
 	  }
 	],
 	"routes": [
 	  {
-		"src": "/pg_app/(.*)",
-		"dest": "/pg_app/main.py"
+		"src": "/(.*)",
+		"dest": "pg_app/main.py"
 	  }
 	]
   }
